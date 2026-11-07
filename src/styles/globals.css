@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Hunarly design tokens.
+  Ink    #12162B  deep blue-black for text and dark surfaces
+  Paper  #F6F6F3  cool off-white page background
+  Lapis  #3140D8  primary (trust, focus)
+  Spark  #F4B13A  marigold accent, used sparingly: logo dot, highlights
+*/
+:root {
+  --background: #f6f6f3;
+  --foreground: #12162b;
+  --card: #ffffff;
+  --card-foreground: #12162b;
+  --primary: #3140d8;
+  --primary-foreground: #ffffff;
+  --secondary: #e9eaf4;
+  --secondary-foreground: #12162b;
+  --muted: #ecece7;
+  --muted-foreground: #5b6078;
+  --accent: #f4b13a;
+  --accent-foreground: #12162b;
+  --destructive: #c62d3b;
+  --destructive-foreground: #ffffff;
+  --success: #17805a;
+  --border: #dcdde6;
+  --input: #cfd1de;
+  --ring: #3140d8;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #0c0f1f;
+  --foreground: #eef0f8;
+  --card: #141831;
+  --card-foreground: #eef0f8;
+  --primary: #8b96ff;
+  --primary-foreground: #0c0f1f;
+  --secondary: #1e2347;
+  --secondary-foreground: #eef0f8;
+  --muted: #181c38;
+  --muted-foreground: #a0a7c8;
+  --accent: #f4b13a;
+  --accent-foreground: #12162b;
+  --destructive: #ff7480;
+  --destructive-foreground: #0c0f1f;
+  --success: #4cd6a0;
+  --border: #272c52;
+  --input: #323865;
+  --ring: #8b96ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
