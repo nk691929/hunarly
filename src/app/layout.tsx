@@ -14,7 +14,10 @@ const display = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: { default: `${siteConfig.name}: ${siteConfig.tagline}`, template: `%s | ${siteConfig.name}` },
+  title: {
+    default: `${siteConfig.name}: ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.name}`,
+  },
   description: siteConfig.description,
   applicationName: siteConfig.name,
   openGraph: { type: "website", siteName: siteConfig.name, locale: "en_PK" },
@@ -29,7 +32,13 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={siteConfig.locale} dir="ltr" suppressHydrationWarning className={`${body.variable} ${display.variable}`}>
+    <html
+      lang={siteConfig.locale}
+      dir="ltr"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+      className={`${body.variable} ${display.variable}`}
+    >
       <body>
         <a
           href="#main"
