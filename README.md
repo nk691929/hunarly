@@ -1,8 +1,8 @@
 # Hunarly
 
-Premium, ATS-friendly resume builder for fresh graduates in Pakistan and remote job applicants.
+Premium, ATS-friendly resume builder for fresh graduates, career changers and remote job seekers worldwide.
 
-> Status: **M0 (tooling) and M1 (design system) complete.** See the milestone list in
+> Status: **M0 to M2 complete** (tooling, design system, landing, pricing, legal, SEO foundation). See
 > `docs/roadmap.md`.
 
 ## Setup (under 5 minutes)
@@ -19,15 +19,15 @@ Open http://localhost:3000. The design system reference is at http://localhost:3
 
 ## Scripts
 
-| Command             | What it does                                  |
-| ------------------- | --------------------------------------------- |
-| `pnpm dev`          | Start the dev server                          |
-| `pnpm build`        | Production build                              |
-| `pnpm lint`         | ESLint                                        |
-| `pnpm typecheck`    | TypeScript strict check                       |
-| `pnpm format`       | Prettier write                                |
-| `pnpm test`         | Unit tests (Vitest)                           |
-| `pnpm test:coverage`| Unit tests with coverage thresholds           |
+| Command              | What it does                        |
+| -------------------- | ----------------------------------- |
+| `pnpm dev`           | Start the dev server                |
+| `pnpm build`         | Production build                    |
+| `pnpm lint`          | ESLint                              |
+| `pnpm typecheck`     | TypeScript strict check             |
+| `pnpm format`        | Prettier write                      |
+| `pnpm test`          | Unit tests (Vitest)                 |
+| `pnpm test:coverage` | Unit tests with coverage thresholds |
 
 ## Project structure
 
@@ -45,7 +45,7 @@ docs/            ADRs, guides
 
 ## Brand
 
-Name: Hunarly (from *hunar*, Urdu for "skill"). Colors: Ink `#12162B`, Paper `#F6F6F3`,
+Name: Hunarly (from _hunar_, Urdu for "skill"; the product is international). Colors: Ink `#12162B`, Paper `#F6F6F3`,
 Lapis `#3140D8`, Spark `#F4B13A`. Fonts: Bricolage Grotesque (display), Instrument Sans (body).
 Logo files: `public/logo.svg`, `src/app/icon.svg`, `src/components/brand/`.
 

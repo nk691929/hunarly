@@ -2,7 +2,7 @@
 
 - [x] M0 Scaffold and tooling
 - [x] M1 Design system
-- [ ] M2 Landing, pricing, legal pages, SEO foundation
+- [x] M2 Landing, pricing, legal pages, SEO foundation
 - [ ] M3 Builder core
 - [ ] M4 Templates
 - [ ] M5 Auth and database
