@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36" role="img" aria-label="Hunarly">
+  <rect width="32" height="32" y="2" rx="9" fill="#3140D8"/>
+  <path d="M10.5 11v14M21.5 15v10M10.5 20l11-4" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="21.5" cy="10.5" r="2.5" fill="#F4B13A"/>
+  <text x="42" y="26" font-family="Bricolage Grotesque, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.6" fill="#12162B">Hunarly</text>
+</svg>
