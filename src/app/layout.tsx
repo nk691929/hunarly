@@ -20,7 +20,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  openGraph: { type: "website", siteName: siteConfig.name, locale: "en_PK" },
+  openGraph: { type: "website", siteName: siteConfig.name, locale: siteConfig.ogLocale },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {

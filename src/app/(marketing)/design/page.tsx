@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Logo } from "@/components/brand/logo";
 import { LogoMark } from "@/components/brand/logo-mark";
-import { SiteHeader } from "@/components/site-header";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,8 +26,7 @@ const swatches = [
 export default function DesignPage() {
   return (
     <>
-      <SiteHeader />
-      <main id="main" className="mx-auto flex max-w-6xl flex-col gap-14 px-5 py-14">
+      <div className="mx-auto flex max-w-6xl flex-col gap-14 px-5 py-14">
         <header className="flex flex-col gap-3">
           <h1 className="font-display text-4xl font-bold tracking-tight">Design system</h1>
           <p className="max-w-xl text-muted-foreground">
@@ -38,7 +36,9 @@ export default function DesignPage() {
         </header>
 
         <section aria-labelledby="logo" className="flex flex-col gap-5">
-          <h2 id="logo" className="font-display text-2xl font-semibold">Logo</h2>
+          <h2 id="logo" className="font-display text-2xl font-semibold">
+            Logo
+          </h2>
           <div className="flex flex-wrap items-center gap-10 rounded-xl border bg-card p-8">
             <Logo asLink={false} />
             <LogoMark className="size-14" />
@@ -47,7 +47,9 @@ export default function DesignPage() {
         </section>
 
         <section aria-labelledby="colors" className="flex flex-col gap-5">
-          <h2 id="colors" className="font-display text-2xl font-semibold">Color</h2>
+          <h2 id="colors" className="font-display text-2xl font-semibold">
+            Color
+          </h2>
           <ul className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {swatches.map((s) => (
               <li key={s.name} className="flex flex-col gap-2">
@@ -59,7 +61,9 @@ export default function DesignPage() {
         </section>
 
         <section aria-labelledby="buttons" className="flex flex-col gap-5">
-          <h2 id="buttons" className="font-display text-2xl font-semibold">Buttons and badges</h2>
+          <h2 id="buttons" className="font-display text-2xl font-semibold">
+            Buttons and badges
+          </h2>
           <div className="flex flex-wrap items-center gap-3">
             <Button>Download PDF</Button>
             <Button variant="accent">Upgrade to Pro</Button>
@@ -79,7 +83,9 @@ export default function DesignPage() {
         </section>
 
         <section aria-labelledby="forms" className="flex flex-col gap-5">
-          <h2 id="forms" className="font-display text-2xl font-semibold">Form and card</h2>
+          <h2 id="forms" className="font-display text-2xl font-semibold">
+            Form and card
+          </h2>
           <Card className="max-w-md">
             <CardHeader>
               <CardTitle>Education</CardTitle>
@@ -92,13 +98,20 @@ export default function DesignPage() {
               </div>
               <div className="flex flex-col gap-2">
                 <Label htmlFor="cgpa">CGPA</Label>
-                <Input id="cgpa" aria-invalid="true" defaultValue="4.5" aria-describedby="cgpa-error" />
-                <p id="cgpa-error" className="text-sm text-destructive">CGPA must be between 0 and 4.</p>
+                <Input
+                  id="cgpa"
+                  aria-invalid="true"
+                  defaultValue="4.5"
+                  aria-describedby="cgpa-error"
+                />
+                <p id="cgpa-error" className="text-sm text-destructive">
+                  CGPA must be between 0 and 4.
+                </p>
               </div>
             </CardContent>
           </Card>
         </section>
-      </main>
+      </div>
     </>
   );
 }

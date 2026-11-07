@@ -11,7 +11,14 @@ export default defineConfig({
     include: ["src/**/*.test.{ts,tsx}", "tests/**/*.test.{ts,tsx}"],
     coverage: {
       provider: "v8",
-      include: ["src/lib/**", "src/server/**", "src/config/**", "src/features/**"],
+      // Business logic only. UI is covered by component, E2E and visual tests.
+      include: [
+        "src/lib/**/*.ts",
+        "src/server/**/*.ts",
+        "src/config/**/*.ts",
+        "src/features/**/*.ts",
+      ],
+      exclude: ["src/config/env.ts"],
       thresholds: { lines: 80, functions: 80, statements: 80, branches: 70 },
     },
   },
