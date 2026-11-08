@@ -3,7 +3,7 @@
 - [x] M0 Scaffold and tooling
 - [x] M1 Design system
 - [x] M2 Landing, pricing, legal pages, SEO foundation
-- [ ] M3 Builder core
+- [x] M3 Builder core (schema, store, forms, autosave, undo/redo, drag-and-drop, live preview)
 - [ ] M4 Templates
 - [ ] M5 Auth and database
 - [ ] M6 PDF export
