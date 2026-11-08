@@ -45,6 +45,8 @@ interface ResumeState {
   setSummary: (summary: string) => void;
   setSkills: (skills: string) => void;
   setStyle: (patch: Partial<ResumeStyle>) => void;
+  /** Switch template and take on its default look (color, font, spacing) in one undoable step. */
+  applyTemplate: (templateId: string, style: ResumeStyle) => void;
   reorderSections: (from: number, to: number) => void;
 
   addItem: <K extends ListKey>(key: K) => void;
@@ -112,6 +114,7 @@ export const useResumeStore = create<ResumeState>()((set, get) => ({
       ...d,
       style: { ...d.style, ...patch },
     })),
+  applyTemplate: (templateId, style) => get().update(null, (d) => ({ ...d, templateId, style })),
   reorderSections: (from, to) => get().update(null, (d) => ops.reorderSections(d, from, to)),
 
   addItem: (key) => get().update(null, (d) => ops.addItem(d, key, createItem(key))),
