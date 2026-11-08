@@ -31,3 +31,12 @@ Items discovered while building. Tick each before going live.
 - [ ] Send yourself a real sign-in email and check it does not land in spam.
 - [ ] Publish the Google OAuth consent screen (or add test users while in testing mode).
 - [ ] Add rate limits for sign-in emails and saves (M10) before opening to the public.
+
+## PDF export (added in M6)
+
+- [ ] Decide where Chromium runs in production (large-limit function or a small container) and test it.
+- [ ] Set `PDF_BASE_URL` if the renderer must reach the app on a different internal address.
+- [ ] Run the PDF text check against the production build and read one real PDF in a few viewers.
+- [ ] Confirm `DEV_PRO_UNLOCK` is not set in production (it is ignored there, but keep it clean).
+- [ ] Move the PDF rate limit to a shared store (M10) before public launch.
+- [ ] Neon free tier sleeps idle databases, which slows the first request. Put the app and database in the same region.

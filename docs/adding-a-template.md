@@ -41,3 +41,7 @@ Commit the snapshot. Later layout changes show up as snapshot diffs in review.
 - No `position: absolute` or `float` for content.
 - Only http(s) addresses become links (use `LinkText`).
 - Keep entries together with `break-inside: avoid` so a page break does not split a job.
+- No wide letter-spacing (keep it at 0.03em or less). Wide tracking makes PDF text extraction read
+  "SUMMARY" as "S U M M A R Y", and hiring software may miss the section.
+- No wide letter-spacing (keep it at 0.03em or less). Wide tracking makes PDF text extraction read
+  "SUMMARY" as "S U M M A R Y", and hiring software may miss the section.
