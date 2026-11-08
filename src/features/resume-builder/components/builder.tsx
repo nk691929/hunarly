@@ -1,19 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { saveResumeAction } from "@/features/dashboard/actions";
 import { BuilderSkeleton } from "@/features/resume-builder/components/builder-skeleton";
 import { BuilderToolbar } from "@/features/resume-builder/components/builder-toolbar";
 import { EditorPanel } from "@/features/resume-builder/components/editor-panel";
 import { ResumePreview } from "@/features/resume-builder/components/resume-preview";
+import { loadDraft, saveDraft } from "@/features/resume-builder/draft-storage";
+import type { Persistence } from "@/features/resume-builder/persistence";
 import { useResumeStore } from "@/features/resume-builder/store";
-import { useAutosave } from "@/hooks/use-autosave";
+import { useAutosave, type AutosaveTarget } from "@/hooks/use-autosave";
 import { cn } from "@/lib/utils";
 
 type Tab = "edit" | "preview";
 
+const localTarget: AutosaveTarget = {
+  load: () => loadDraft(),
+  save: async (doc) => saveDraft(doc),
+};
+
 /** Split-screen builder: editor on the left, live A4 preview on the right. Tabs on small screens. */
-export function Builder() {
-  useAutosave();
+export function Builder({ persistence }: { persistence: Persistence }) {
+  const resumeId = persistence.kind === "cloud" ? persistence.resumeId : null;
+  const initialDocument = persistence.kind === "cloud" ? persistence.initialDocument : null;
+
+  const target = useMemo<AutosaveTarget>(() => {
+    if (!resumeId || !initialDocument) return localTarget;
+    return {
+      load: () => initialDocument,
+      save: async (doc) => {
+        const result = await saveResumeAction(resumeId, doc);
+        return result.ok;
+      },
+    };
+  }, [resumeId, initialDocument]);
+
+  useAutosave(target);
   const hydrated = useResumeStore((s) => s.hydrated);
   const [tab, setTab] = useState<Tab>("edit");
 
@@ -21,7 +43,7 @@ export function Builder() {
 
   return (
     <div className="flex h-dvh flex-col">
-      <BuilderToolbar />
+      <BuilderToolbar persistence={persistence} />
 
       <div role="tablist" aria-label="Builder view" className="grid grid-cols-2 border-b lg:hidden">
         {(["edit", "preview"] as const).map((t) => (

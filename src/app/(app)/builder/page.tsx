@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { BuilderLoader } from "@/features/resume-builder/components/builder-loader";
+import { auth } from "@/server/auth";
+import { authStatus } from "@/server/auth-status";
 
 export const metadata: Metadata = {
   title: "Resume builder",
   robots: { index: false, follow: false }, // a private tool, not a landing page
 };
 
-export default function BuilderPage() {
-  return <BuilderLoader />;
+/** Guest builder: the draft lives in this browser. Signed-in users manage resumes from the dashboard. */
+export default async function BuilderPage() {
+  const session = await auth();
+  if (session?.user?.id) redirect("/dashboard");
+  return <BuilderLoader persistence={{ kind: "local", authAvailable: authStatus.configured }} />;
 }

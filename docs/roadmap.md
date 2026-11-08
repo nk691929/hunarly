@@ -5,7 +5,7 @@
 - [x] M2 Landing, pricing, legal pages, SEO foundation
 - [x] M3 Builder core (schema, store, forms, autosave, undo/redo, drag-and-drop, live preview)
 - [x] M4 Templates (six templates, color, font and spacing controls)
-- [ ] M5 Auth and database
+- [x] M5 Auth and database (Google and email sign-in, saved resumes, dashboard, draft import)
 - [ ] M6 PDF export
 - [ ] M7 Billing and gating
 - [ ] M8 Premium features
