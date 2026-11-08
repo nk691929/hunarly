@@ -3,7 +3,7 @@
 exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
 <DocumentFragment>
   <div
-    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+    style="font-family: Arial, Helvetica, "Liberation Sans", sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
   >
     <header
       style="padding: 48px 52px 0px; text-align: left;"
@@ -61,13 +61,13 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
       </p>
     </header>
     <div
-      style="padding: 0px 52px 48px;"
+      style="padding: 0px 52px 0px;"
     >
       <section
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Summary
         </h2>
@@ -81,7 +81,7 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Education
         </h2>
@@ -127,7 +127,7 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Projects
         </h2>
@@ -173,7 +173,7 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Experience
         </h2>
@@ -224,7 +224,7 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Skills
         </h2>
@@ -238,7 +238,7 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Certifications
         </h2>
@@ -254,7 +254,7 @@ exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
         >
           Languages
         </h2>
@@ -278,7 +278,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
       style="padding: 52px 56px 0px; text-align: center;"
     >
       <h1
-        style="margin: 0px; font-size: 30px; font-weight: 700; letter-spacing: 1px; line-height: 1.15; color: rgb(18, 22, 43);"
+        style="margin: 0px; font-size: 30px; font-weight: 700; letter-spacing: 0; line-height: 1.15; color: rgb(18, 22, 43);"
       >
         Maya Johnson
       </h1>
@@ -330,13 +330,13 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
       </p>
     </header>
     <div
-      style="padding: 0px 56px 52px;"
+      style="padding: 0px 56px 0px;"
     >
       <section
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Summary
         </h2>
@@ -350,7 +350,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Education
         </h2>
@@ -396,7 +396,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Projects
         </h2>
@@ -442,7 +442,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Experience
         </h2>
@@ -493,7 +493,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Skills
         </h2>
@@ -507,7 +507,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Certifications
         </h2>
@@ -523,7 +523,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 12.5px; font-weight: 700; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
         >
           Languages
         </h2>
@@ -541,7 +541,7 @@ exports[`Executive > matches its snapshot with the sample resume 1`] = `
 exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
 <DocumentFragment>
   <div
-    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+    style="font-family: Arial, Helvetica, "Liberation Sans", sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
   >
     <header
       style="padding: 40px 48px 26px; background: rgb(11, 122, 90); color: rgb(255, 255, 255); text-align: left;"
@@ -599,13 +599,13 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
       </p>
     </header>
     <div
-      style="padding: 4px 48px 44px;"
+      style="padding: 4px 48px 0px;"
     >
       <section
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Summary
         </h2>
@@ -619,7 +619,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Education
         </h2>
@@ -665,7 +665,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Projects
         </h2>
@@ -711,7 +711,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Experience
         </h2>
@@ -762,7 +762,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Skills
         </h2>
@@ -810,7 +810,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Certifications
         </h2>
@@ -826,7 +826,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+          style="margin: 0px 0px 8px; break-after: avoid; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
         >
           Languages
         </h2>
@@ -844,7 +844,7 @@ exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
 exports[`Minimal > matches its snapshot with the sample resume 1`] = `
 <DocumentFragment>
   <div
-    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 1.45; color: rgb(26, 29, 46);"
+    style="font-family: Arial, Helvetica, "Liberation Sans", sans-serif; font-size: 12.5px; line-height: 1.45; color: rgb(26, 29, 46);"
   >
     <header
       style="padding: 56px 60px 0px; text-align: left;"
@@ -902,13 +902,13 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
       </p>
     </header>
     <div
-      style="padding: 0px 60px 56px;"
+      style="padding: 0px 60px 0px;"
     >
       <section
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Summary
         </h2>
@@ -922,7 +922,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Education
         </h2>
@@ -968,7 +968,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Projects
         </h2>
@@ -1014,7 +1014,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Experience
         </h2>
@@ -1065,7 +1065,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Skills
         </h2>
@@ -1079,7 +1079,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Certifications
         </h2>
@@ -1095,7 +1095,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 11.5px; font-weight: 600; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
         >
           Languages
         </h2>
@@ -1113,7 +1113,7 @@ exports[`Minimal > matches its snapshot with the sample resume 1`] = `
 exports[`Modern > matches its snapshot with the sample resume 1`] = `
 <DocumentFragment>
   <div
-    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+    style="font-family: Arial, Helvetica, "Liberation Sans", sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
   >
     <header
       style="padding: 48px 52px 0px; text-align: left;"
@@ -1171,13 +1171,13 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
       </p>
     </header>
     <div
-      style="padding: 0px 52px 48px;"
+      style="padding: 0px 52px 0px;"
     >
       <section
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Summary
         </h2>
@@ -1191,7 +1191,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Education
         </h2>
@@ -1237,7 +1237,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Projects
         </h2>
@@ -1283,7 +1283,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Experience
         </h2>
@@ -1334,7 +1334,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Skills
         </h2>
@@ -1382,7 +1382,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Certifications
         </h2>
@@ -1398,7 +1398,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 18px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+          style="margin: 0px 0px 6px; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
         >
           Languages
         </h2>
@@ -1416,7 +1416,7 @@ exports[`Modern > matches its snapshot with the sample resume 1`] = `
 exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
 <DocumentFragment>
   <div
-    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+    style="font-family: Arial, Helvetica, "Liberation Sans", sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
   >
     <header
       style="padding: 46px 50px 0px; text-align: left;"
@@ -1476,13 +1476,13 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
       </ul>
     </header>
     <div
-      style="padding: 0px 50px 46px;"
+      style="padding: 0px 50px 0px;"
     >
       <section
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Summary
         </h2>
@@ -1496,7 +1496,7 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Education
         </h2>
@@ -1542,7 +1542,7 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Projects
         </h2>
@@ -1588,7 +1588,7 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Experience
         </h2>
@@ -1639,7 +1639,7 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Skills
         </h2>
@@ -1687,7 +1687,7 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Certifications
         </h2>
@@ -1703,7 +1703,7 @@ exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
         style="margin-top: 14px;"
       >
         <h2
-          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; break-after: avoid; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
         >
           Languages
         </h2>

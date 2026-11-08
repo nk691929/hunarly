@@ -18,6 +18,10 @@ export const env = createEnv({
     AUTH_GOOGLE_SECRET: z.string().optional(),
     RESEND_API_KEY: z.string().optional(),
     EMAIL_FROM: z.string().optional(),
+    /** Address the PDF browser uses to open /print. Defaults to NEXT_PUBLIC_SITE_URL. */
+    PDF_BASE_URL: z.string().url().optional(),
+    /** Development only: 1 removes the PDF watermark so you can check the clean output. */
+    DEV_PRO_UNLOCK: z.string().optional(),
   },
   client: {
     NEXT_PUBLIC_SITE_URL: z.string().url().default("http://localhost:3000"),
@@ -30,6 +34,8 @@ export const env = createEnv({
     AUTH_GOOGLE_SECRET: process.env.AUTH_GOOGLE_SECRET,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     EMAIL_FROM: process.env.EMAIL_FROM,
+    PDF_BASE_URL: process.env.PDF_BASE_URL,
+    DEV_PRO_UNLOCK: process.env.DEV_PRO_UNLOCK,
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   },
   skipValidation: process.env.SKIP_ENV_VALIDATION === "1",

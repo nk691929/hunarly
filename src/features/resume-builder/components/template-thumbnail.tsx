@@ -2,7 +2,7 @@
 
 import { memo, useMemo } from "react";
 import { createSampleDocument } from "@/features/resume-builder/defaults";
-import { A4_HEIGHT, A4_WIDTH } from "@/features/resume-builder/components/resume-preview";
+import { A4_HEIGHT, A4_WIDTH } from "@/features/resume-builder/pagination";
 import type { TemplateDefinition } from "@/features/templates/types";
 
 const THUMB_WIDTH = 132;

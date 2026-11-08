@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   images: { formats: ["image/avif", "image/webp"] },
+  // The PDF engine drives a real browser, so it must not be bundled.
+  serverExternalPackages: ["playwright", "playwright-core"],
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

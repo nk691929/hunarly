@@ -1,6 +1,6 @@
 "use client";
 
-import { Redo2, Undo2 } from "lucide-react";
+import { Download, Redo2, Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
 import { Logo } from "@/components/brand/logo";
@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import type { Persistence } from "@/features/resume-builder/persistence";
 import type { ResumeMode } from "@/features/resume-builder/schema";
 import { useResumeStore, type SaveStatus } from "@/features/resume-builder/store";
+import { usePdfDownload } from "@/hooks/use-pdf-download";
 
 function statusText(status: SaveStatus, kind: Persistence["kind"]): string {
   switch (status) {
@@ -44,6 +45,7 @@ export function BuilderToolbar({ persistence }: { persistence: Persistence }) {
   const canRedo = useResumeStore((s) => s.history.future.length > 0);
   const saveStatus = useResumeStore((s) => s.saveStatus);
   const { setTitle, setMode, undo, redo, loadSample, startOver } = useResumeStore.getState();
+  const pdf = usePdfDownload();
 
   // Ctrl/Cmd+Z and Ctrl/Cmd+Shift+Z (or Y) outside text fields; inside fields the browser's own undo applies.
   useEffect(() => {
@@ -135,7 +137,19 @@ export function BuilderToolbar({ persistence }: { persistence: Persistence }) {
         </Button>
       </div>
 
-      <p role="status" aria-live="polite" className="ml-auto text-sm text-muted-foreground">
+      <Button
+        type="button"
+        size="sm"
+        variant="accent"
+        disabled={pdf.state === "working"}
+        onClick={pdf.download}
+        className="ml-auto"
+      >
+        <Download aria-hidden="true" />
+        {pdf.state === "working" ? "Preparing PDF..." : "Download PDF"}
+      </Button>
+
+      <p role="status" aria-live="polite" className="text-sm text-muted-foreground">
         {statusText(saveStatus, persistence.kind)}
       </p>
       {persistence.kind === "cloud" && (
@@ -149,6 +163,11 @@ export function BuilderToolbar({ persistence }: { persistence: Persistence }) {
         </Button>
       )}
       <ThemeToggle />
+      {pdf.error && (
+        <p role="alert" className="w-full text-sm text-destructive">
+          {pdf.error}
+        </p>
+      )}
     </div>
   );
 }

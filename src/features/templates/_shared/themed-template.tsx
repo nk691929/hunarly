@@ -6,7 +6,11 @@ import type { HeadingVariant, TemplateTheme } from "@/features/templates/_shared
 import { FONTS, GAP, INK, MONO, MUTED, TEXT } from "@/features/templates/_shared/tokens";
 
 function headingStyle(variant: HeadingVariant, accent: string, mono: boolean): CSSProperties {
-  const base: CSSProperties = { margin: "0 0 6px", fontFamily: mono ? MONO : undefined };
+  const base: CSSProperties = {
+    margin: "0 0 6px",
+    fontFamily: mono ? MONO : undefined,
+    breakAfter: "avoid",
+  };
   switch (variant) {
     case "underline":
       return {
@@ -33,7 +37,6 @@ function headingStyle(variant: HeadingVariant, accent: string, mono: boolean): C
         ...base,
         fontSize: 11.5,
         fontWeight: 600,
-        letterSpacing: "0.14em",
         textTransform: "uppercase",
         color: MUTED,
         borderBottom: "1px solid #d9dbe6",
@@ -44,7 +47,6 @@ function headingStyle(variant: HeadingVariant, accent: string, mono: boolean): C
         ...base,
         fontSize: 12.5,
         fontWeight: 700,
-        letterSpacing: "0.12em",
         textTransform: "uppercase",
         color: INK,
         borderBottom: `3px double ${accent}`,
@@ -201,7 +203,8 @@ export function ThemedTemplate({ document: doc, theme }: TemplateProps & { theme
         ) : null}
       </header>
 
-      <div style={{ padding: `${band ? 4 : 0}px ${theme.padX}px ${theme.padY}px` }}>
+      {/* No bottom padding: spacing below the last line comes from the page margin, so a PDF never ends with a blank page. */}
+      <div style={{ padding: `${band ? 4 : 0}px ${theme.padX}px 0` }}>
         {doc.sectionOrder
           .filter((id) => !isSectionEmpty(doc, id))
           .map((id) => (

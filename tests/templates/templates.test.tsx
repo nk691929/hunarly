@@ -109,4 +109,14 @@ describe.each(templates.map((t) => [t.name, t] as const))("%s", (_name, template
     expect(container.querySelectorAll("h2")).toHaveLength(0);
     expect(container.querySelector("a")).toBeNull();
   });
+
+  it("avoids wide letter-spacing, which splits words when text is extracted", () => {
+    const { container } = render(<Template document={sampleFor(template)} />);
+    for (const el of container.querySelectorAll<HTMLElement>("[style*='letter-spacing']")) {
+      const value = el.style.letterSpacing;
+      const amount = parseFloat(value);
+      if (value.endsWith("em")) expect(amount).toBeLessThanOrEqual(0.03);
+      else expect(amount).toBeLessThanOrEqual(0.5);
+    }
+  });
 });

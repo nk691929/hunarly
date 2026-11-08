@@ -6,7 +6,7 @@
 - [x] M3 Builder core (schema, store, forms, autosave, undo/redo, drag-and-drop, live preview)
 - [x] M4 Templates (six templates, color, font and spacing controls)
 - [x] M5 Auth and database (Google and email sign-in, saved resumes, dashboard, draft import)
-- [ ] M6 PDF export
+- [x] M6 PDF export (server-rendered, selectable text, free-plan footer, ATS text check)
 - [ ] M7 Billing and gating
 - [ ] M8 Premium features
 - [ ] M9 SEO content and blog

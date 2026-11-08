@@ -26,6 +26,8 @@ export default defineConfig({
         "src/server/db.ts",
         "src/server/resumes/index.ts",
         "src/server/resumes/prisma-repository.ts",
+        "src/server/providers/pdf/playwright.ts",
+        "src/server/providers/pdf/instance.ts",
         "src/features/**/actions.ts",
       ],
       thresholds: { lines: 80, functions: 80, statements: 80, branches: 70 },
