@@ -1,0 +1,16 @@
+# Local PostgreSQL for development:  docker compose up -d
+# Connection string: postgresql://hunarly:hunarly@localhost:5432/hunarly
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: hunarly
+      POSTGRES_PASSWORD: hunarly
+      POSTGRES_DB: hunarly
+    ports:
+      - "5432:5432"
+    volumes:
+      - hunarly-db:/var/lib/postgresql/data
+volumes:
+  hunarly-db:
