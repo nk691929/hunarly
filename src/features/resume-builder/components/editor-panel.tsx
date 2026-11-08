@@ -15,8 +15,9 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { ChevronDown } from "lucide-react";
-import { useState, type ComponentType } from "react";
+import { useState, type ComponentType, type ReactNode } from "react";
 import { BasicsEditor } from "@/features/resume-builder/components/basics-editor";
+import { DesignEditor } from "@/features/resume-builder/components/design-editor";
 import { SectionCard } from "@/features/resume-builder/components/section-card";
 import {
   CertificationsEditor,
@@ -41,7 +42,46 @@ const EDITORS: Record<SectionId, ComponentType> = {
   languages: LanguagesEditor,
 };
 
-type OpenId = SectionId | "basics" | null;
+type FixedId = "basics" | "design";
+type OpenId = SectionId | FixedId | null;
+
+/** A collapsible card for the parts that are not reorderable: Basics and Design. */
+function FixedCard({
+  id,
+  title,
+  open,
+  onToggle,
+  children,
+}: {
+  id: FixedId;
+  title: string;
+  open: boolean;
+  onToggle: () => void;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-xl border bg-card">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls={`panel-${id}`}
+        onClick={onToggle}
+        className="flex w-full items-center justify-between gap-3 rounded-xl px-5 py-4 text-left font-display font-semibold"
+      >
+        {title}
+        <ChevronDown
+          className={cn("size-4 transition-transform", open && "rotate-180")}
+          aria-hidden="true"
+        />
+      </button>
+      {open && (
+        <div id={`panel-${id}`} className="border-t p-5">
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function EditorPanel() {
   const order = useResumeStore((s) => s.history.present.sectionOrder);
@@ -64,26 +104,22 @@ export function EditorPanel() {
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-3">
-      <div className="rounded-xl border bg-card">
-        <button
-          type="button"
-          aria-expanded={open === "basics"}
-          aria-controls="panel-basics"
-          onClick={() => toggle("basics")}
-          className="flex w-full items-center justify-between gap-3 rounded-xl px-5 py-4 text-left font-display font-semibold"
-        >
-          Basics
-          <ChevronDown
-            className={cn("size-4 transition-transform", open === "basics" && "rotate-180")}
-            aria-hidden="true"
-          />
-        </button>
-        {open === "basics" && (
-          <div id="panel-basics" className="border-t p-5">
-            <BasicsEditor />
-          </div>
-        )}
-      </div>
+      <FixedCard
+        id="basics"
+        title="Basics"
+        open={open === "basics"}
+        onToggle={() => toggle("basics")}
+      >
+        <BasicsEditor />
+      </FixedCard>
+      <FixedCard
+        id="design"
+        title="Design"
+        open={open === "design"}
+        onToggle={() => toggle("design")}
+      >
+        <DesignEditor />
+      </FixedCard>
 
       <p className="mt-2 px-1 text-sm text-muted-foreground">
         Drag sections to change their order on your resume.

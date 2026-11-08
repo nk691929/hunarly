@@ -1,0 +1,1719 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ATS Classic > matches its snapshot with the sample resume 1`] = `
+<DocumentFragment>
+  <div
+    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+  >
+    <header
+      style="padding: 48px 52px 0px; text-align: left;"
+    >
+      <h1
+        style="margin: 0px; font-size: 28px; font-weight: 700; letter-spacing: 0; line-height: 1.15; color: rgb(18, 22, 43);"
+      >
+        Maya Johnson
+      </h1>
+      <p
+        style="margin: 4px 0px 0px; font-size: 15px; font-weight: 500; color: rgb(49, 64, 216);"
+      >
+        Junior Data Analyst
+      </p>
+      <p
+        style="margin: 6px 0px 0px; color: rgb(85, 91, 115); font-size: 12px;"
+      >
+        <span>
+          maya.johnson@example.com
+        </span>
+        <span>
+           | +44 7700 900123
+        </span>
+        <span>
+           | Leeds, United Kingdom
+        </span>
+        <span>
+           | 
+          <span>
+            LinkedIn: 
+            <a
+              href="https://linkedin.com/in/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              linkedin.com/in/mayajohnson
+            </a>
+          </span>
+        </span>
+        <span>
+           | 
+          <span>
+            GitHub: 
+            <a
+              href="https://github.com/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              github.com/mayajohnson
+            </a>
+          </span>
+        </span>
+      </p>
+    </header>
+    <div
+      style="padding: 0px 52px 48px;"
+    >
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Summary
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Statistics graduate who turned a final-year project into a dashboard used by 40 students and staff. Strong in Python, SQL and Tableau. Looking for a junior analyst role.
+        </p>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Education
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                BSc Statistics
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Sep 2022 - Jun 2026
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            University of Leeds, Leeds, United Kingdom, GPA 3.8 / 4.0
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Relevant courses: Regression, Machine Learning, Databases
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Dean's List 2024
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Projects
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Final-year project: Campus Energy Dashboard
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              github.com/mayajohnson/energy-dashboard
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Technologies: Python, SQL, Tableau
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Analyzed 18 months of campus meter data to find peak-use patterns
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a dashboard now used by 40 students and staff
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Experience
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Data Analyst Intern
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Jun 2025 - Aug 2025
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Northwind Analytics, Remote
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Cleaned and merged 18 months of sales data using Python and SQL
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a weekly Tableau report that cut manual reporting from 3 hours to 20 minutes
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Presented findings to a team of 8 and helped prioritize 2 product fixes
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Skills
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Python, SQL, Tableau, Excel, Statistics, Data cleaning, Communication
+        </p>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Certifications
+        </h2>
+        <ul
+          style="margin: 0px; padding-left: 18px;"
+        >
+          <li>
+            Google Data Analytics Certificate, Coursera (2025)
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em; color: rgb(49, 64, 216); border-bottom: 1.5px solid rgb(49, 64, 216); padding-bottom: 3px;"
+        >
+          Languages
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          English (Native), French (Professional)
+        </p>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Executive > matches its snapshot with the sample resume 1`] = `
+<DocumentFragment>
+  <div
+    style="font-family: Georgia, "Times New Roman", serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+  >
+    <header
+      style="padding: 52px 56px 0px; text-align: center;"
+    >
+      <h1
+        style="margin: 0px; font-size: 30px; font-weight: 700; letter-spacing: 1px; line-height: 1.15; color: rgb(18, 22, 43);"
+      >
+        Maya Johnson
+      </h1>
+      <p
+        style="margin: 4px 0px 0px; font-size: 15px; font-weight: 500; color: rgb(31, 42, 92);"
+      >
+        Junior Data Analyst
+      </p>
+      <p
+        style="margin: 6px 0px 0px; color: rgb(85, 91, 115); font-size: 12px;"
+      >
+        <span>
+          maya.johnson@example.com
+        </span>
+        <span>
+           | +44 7700 900123
+        </span>
+        <span>
+           | Leeds, United Kingdom
+        </span>
+        <span>
+           | 
+          <span>
+            LinkedIn: 
+            <a
+              href="https://linkedin.com/in/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              linkedin.com/in/mayajohnson
+            </a>
+          </span>
+        </span>
+        <span>
+           | 
+          <span>
+            GitHub: 
+            <a
+              href="https://github.com/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              github.com/mayajohnson
+            </a>
+          </span>
+        </span>
+      </p>
+    </header>
+    <div
+      style="padding: 0px 56px 52px;"
+    >
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Summary
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Statistics graduate who turned a final-year project into a dashboard used by 40 students and staff. Strong in Python, SQL and Tableau. Looking for a junior analyst role.
+        </p>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Education
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                BSc Statistics
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Sep 2022 - Jun 2026
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            University of Leeds, Leeds, United Kingdom, GPA 3.8 / 4.0
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Relevant courses: Regression, Machine Learning, Databases
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Dean's List 2024
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Projects
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Final-year project: Campus Energy Dashboard
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              github.com/mayajohnson/energy-dashboard
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Technologies: Python, SQL, Tableau
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Analyzed 18 months of campus meter data to find peak-use patterns
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a dashboard now used by 40 students and staff
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Experience
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Data Analyst Intern
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Jun 2025 - Aug 2025
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Northwind Analytics, Remote
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Cleaned and merged 18 months of sales data using Python and SQL
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a weekly Tableau report that cut manual reporting from 3 hours to 20 minutes
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Presented findings to a team of 8 and helped prioritize 2 product fixes
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Skills
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Python, SQL, Tableau, Excel, Statistics, Data cleaning, Communication
+        </p>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Certifications
+        </h2>
+        <ul
+          style="margin: 0px; padding-left: 18px;"
+        >
+          <li>
+            Google Data Analytics Certificate, Coursera (2025)
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(18, 22, 43); border-bottom: 3px double rgb(31, 42, 92); padding-bottom: 3px;"
+        >
+          Languages
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          English (Native), French (Professional)
+        </p>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Fresher-Friendly > matches its snapshot with the sample resume 1`] = `
+<DocumentFragment>
+  <div
+    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+  >
+    <header
+      style="padding: 40px 48px 26px; background: rgb(11, 122, 90); color: rgb(255, 255, 255); text-align: left;"
+    >
+      <h1
+        style="margin: 0px; font-size: 30px; font-weight: 700; letter-spacing: 0; line-height: 1.15; color: rgb(255, 255, 255);"
+      >
+        Maya Johnson
+      </h1>
+      <p
+        style="margin: 4px 0px 0px; font-size: 15px; font-weight: 500; color: rgba(255, 255, 255, 0.92);"
+      >
+        Junior Data Analyst
+      </p>
+      <p
+        style="margin: 6px 0px 0px; color: rgba(255, 255, 255, 0.88); font-size: 12px;"
+      >
+        <span>
+          maya.johnson@example.com
+        </span>
+        <span>
+           | +44 7700 900123
+        </span>
+        <span>
+           | Leeds, United Kingdom
+        </span>
+        <span>
+           | 
+          <span>
+            LinkedIn: 
+            <a
+              href="https://linkedin.com/in/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              linkedin.com/in/mayajohnson
+            </a>
+          </span>
+        </span>
+        <span>
+           | 
+          <span>
+            GitHub: 
+            <a
+              href="https://github.com/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              github.com/mayajohnson
+            </a>
+          </span>
+        </span>
+      </p>
+    </header>
+    <div
+      style="padding: 4px 48px 44px;"
+    >
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Summary
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Statistics graduate who turned a final-year project into a dashboard used by 40 students and staff. Strong in Python, SQL and Tableau. Looking for a junior analyst role.
+        </p>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Education
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                BSc Statistics
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Sep 2022 - Jun 2026
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            University of Leeds, Leeds, United Kingdom, GPA 3.8 / 4.0
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Relevant courses: Regression, Machine Learning, Databases
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Dean's List 2024
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Projects
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Final-year project: Campus Energy Dashboard
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              github.com/mayajohnson/energy-dashboard
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Technologies: Python, SQL, Tableau
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Analyzed 18 months of campus meter data to find peak-use patterns
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a dashboard now used by 40 students and staff
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Experience
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Data Analyst Intern
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Jun 2025 - Aug 2025
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Northwind Analytics, Remote
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Cleaned and merged 18 months of sales data using Python and SQL
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a weekly Tableau report that cut manual reporting from 3 hours to 20 minutes
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Presented findings to a team of 8 and helped prioritize 2 product fixes
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Skills
+        </h2>
+        <ul
+          style="margin: 0px; padding: 0px; list-style: none; display: flex; flex-wrap: wrap; gap: 6px;"
+        >
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Python
+          </li>
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            SQL
+          </li>
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Tableau
+          </li>
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Excel
+          </li>
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Statistics
+          </li>
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Data cleaning
+          </li>
+          <li
+            style="background: rgba(11, 122, 90, 0.1); color: rgb(11, 122, 90); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Communication
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Certifications
+        </h2>
+        <ul
+          style="margin: 0px; padding-left: 18px;"
+        >
+          <li>
+            Google Data Analytics Certificate, Coursera (2025)
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 8px; font-size: 13px; font-weight: 700; color: rgb(11, 122, 90); background: rgba(11, 122, 90, 0.1); padding: 4px 10px; border-radius: 6px;"
+        >
+          Languages
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          English (Native), French (Professional)
+        </p>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Minimal > matches its snapshot with the sample resume 1`] = `
+<DocumentFragment>
+  <div
+    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 12.5px; line-height: 1.45; color: rgb(26, 29, 46);"
+  >
+    <header
+      style="padding: 56px 60px 0px; text-align: left;"
+    >
+      <h1
+        style="margin: 0px; font-size: 26px; font-weight: 600; letter-spacing: 0; line-height: 1.15; color: rgb(18, 22, 43);"
+      >
+        Maya Johnson
+      </h1>
+      <p
+        style="margin: 4px 0px 0px; font-size: 15px; font-weight: 500; color: rgb(51, 65, 85);"
+      >
+        Junior Data Analyst
+      </p>
+      <p
+        style="margin: 6px 0px 0px; color: rgb(85, 91, 115); font-size: 12px;"
+      >
+        <span>
+          maya.johnson@example.com
+        </span>
+        <span>
+           | +44 7700 900123
+        </span>
+        <span>
+           | Leeds, United Kingdom
+        </span>
+        <span>
+           | 
+          <span>
+            LinkedIn: 
+            <a
+              href="https://linkedin.com/in/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              linkedin.com/in/mayajohnson
+            </a>
+          </span>
+        </span>
+        <span>
+           | 
+          <span>
+            GitHub: 
+            <a
+              href="https://github.com/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              github.com/mayajohnson
+            </a>
+          </span>
+        </span>
+      </p>
+    </header>
+    <div
+      style="padding: 0px 60px 56px;"
+    >
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Summary
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Statistics graduate who turned a final-year project into a dashboard used by 40 students and staff. Strong in Python, SQL and Tableau. Looking for a junior analyst role.
+        </p>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Education
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                BSc Statistics
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Sep 2022 - Jun 2026
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            University of Leeds, Leeds, United Kingdom, GPA 3.8 / 4.0
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Relevant courses: Regression, Machine Learning, Databases
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Dean's List 2024
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Projects
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Final-year project: Campus Energy Dashboard
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              github.com/mayajohnson/energy-dashboard
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Technologies: Python, SQL, Tableau
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Analyzed 18 months of campus meter data to find peak-use patterns
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a dashboard now used by 40 students and staff
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Experience
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Data Analyst Intern
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Jun 2025 - Aug 2025
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Northwind Analytics, Remote
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Cleaned and merged 18 months of sales data using Python and SQL
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a weekly Tableau report that cut manual reporting from 3 hours to 20 minutes
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Presented findings to a team of 8 and helped prioritize 2 product fixes
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Skills
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Python, SQL, Tableau, Excel, Statistics, Data cleaning, Communication
+        </p>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Certifications
+        </h2>
+        <ul
+          style="margin: 0px; padding-left: 18px;"
+        >
+          <li>
+            Google Data Analytics Certificate, Coursera (2025)
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(85, 91, 115); border-bottom: 1px solid rgb(217, 219, 230); padding-bottom: 4px;"
+        >
+          Languages
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          English (Native), French (Professional)
+        </p>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Modern > matches its snapshot with the sample resume 1`] = `
+<DocumentFragment>
+  <div
+    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+  >
+    <header
+      style="padding: 48px 52px 0px; text-align: left;"
+    >
+      <h1
+        style="margin: 0px; font-size: 32px; font-weight: 700; letter-spacing: 0; line-height: 1.15; color: rgb(18, 22, 43);"
+      >
+        Maya Johnson
+      </h1>
+      <p
+        style="margin: 4px 0px 0px; font-size: 15px; font-weight: 500; color: rgb(15, 118, 110);"
+      >
+        Junior Data Analyst
+      </p>
+      <p
+        style="margin: 6px 0px 0px; color: rgb(85, 91, 115); font-size: 12px;"
+      >
+        <span>
+          maya.johnson@example.com
+        </span>
+        <span>
+           | +44 7700 900123
+        </span>
+        <span>
+           | Leeds, United Kingdom
+        </span>
+        <span>
+           | 
+          <span>
+            LinkedIn: 
+            <a
+              href="https://linkedin.com/in/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              linkedin.com/in/mayajohnson
+            </a>
+          </span>
+        </span>
+        <span>
+           | 
+          <span>
+            GitHub: 
+            <a
+              href="https://github.com/mayajohnson"
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: none;"
+              target="_blank"
+            >
+              github.com/mayajohnson
+            </a>
+          </span>
+        </span>
+      </p>
+    </header>
+    <div
+      style="padding: 0px 52px 48px;"
+    >
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Summary
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Statistics graduate who turned a final-year project into a dashboard used by 40 students and staff. Strong in Python, SQL and Tableau. Looking for a junior analyst role.
+        </p>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Education
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                BSc Statistics
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Sep 2022 - Jun 2026
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            University of Leeds, Leeds, United Kingdom, GPA 3.8 / 4.0
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Relevant courses: Regression, Machine Learning, Databases
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Dean's List 2024
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Projects
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Final-year project: Campus Energy Dashboard
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              github.com/mayajohnson/energy-dashboard
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Technologies: Python, SQL, Tableau
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Analyzed 18 months of campus meter data to find peak-use patterns
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a dashboard now used by 40 students and staff
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Experience
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Data Analyst Intern
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px;"
+            >
+              Jun 2025 - Aug 2025
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Northwind Analytics, Remote
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Cleaned and merged 18 months of sales data using Python and SQL
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a weekly Tableau report that cut manual reporting from 3 hours to 20 minutes
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Presented findings to a team of 8 and helped prioritize 2 product fixes
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Skills
+        </h2>
+        <ul
+          style="margin: 0px; padding: 0px; list-style: none; display: flex; flex-wrap: wrap; gap: 6px;"
+        >
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Python
+          </li>
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            SQL
+          </li>
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Tableau
+          </li>
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Excel
+          </li>
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Statistics
+          </li>
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Data cleaning
+          </li>
+          <li
+            style="background: rgba(15, 118, 110, 0.1); color: rgb(15, 118, 110); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 500;"
+          >
+            Communication
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Certifications
+        </h2>
+        <ul
+          style="margin: 0px; padding-left: 18px;"
+        >
+          <li>
+            Google Data Analytics Certificate, Coursera (2025)
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 18px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(15, 118, 110); padding-left: 10px;"
+        >
+          Languages
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          English (Native), French (Professional)
+        </p>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Remote / Tech > matches its snapshot with the sample resume 1`] = `
+<DocumentFragment>
+  <div
+    style="font-family: var(--font-body), Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.45; color: rgb(26, 29, 46);"
+  >
+    <header
+      style="padding: 46px 50px 0px; text-align: left;"
+    >
+      <h1
+        style="margin: 0px; font-size: 28px; font-weight: 700; letter-spacing: 0; line-height: 1.15; color: rgb(18, 22, 43);"
+      >
+        Maya Johnson
+      </h1>
+      <p
+        style="margin: 4px 0px 0px; font-size: 15px; font-weight: 500; color: rgb(109, 40, 217);"
+      >
+        Junior Data Analyst
+      </p>
+      <p
+        style="margin: 6px 0px 0px; color: rgb(85, 91, 115); font-size: 12px;"
+      >
+        <span>
+          maya.johnson@example.com
+        </span>
+        <span>
+           | +44 7700 900123
+        </span>
+        <span>
+           | Leeds, United Kingdom
+        </span>
+      </p>
+      <ul
+        style="margin: 8px 0px 0px; padding: 0px; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-start;"
+      >
+        <li
+          style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 11.5px;"
+        >
+          LinkedIn: 
+          <a
+            href="https://linkedin.com/in/mayajohnson"
+            rel="noopener noreferrer"
+            style="color: inherit; text-decoration: none;"
+            target="_blank"
+          >
+            linkedin.com/in/mayajohnson
+          </a>
+        </li>
+        <li
+          style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 11.5px;"
+        >
+          GitHub: 
+          <a
+            href="https://github.com/mayajohnson"
+            rel="noopener noreferrer"
+            style="color: inherit; text-decoration: none;"
+            target="_blank"
+          >
+            github.com/mayajohnson
+          </a>
+        </li>
+      </ul>
+    </header>
+    <div
+      style="padding: 0px 50px 46px;"
+    >
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Summary
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          Statistics graduate who turned a final-year project into a dashboard used by 40 students and staff. Strong in Python, SQL and Tableau. Looking for a junior analyst role.
+        </p>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Education
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                BSc Statistics
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;"
+            >
+              Sep 2022 - Jun 2026
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            University of Leeds, Leeds, United Kingdom, GPA 3.8 / 4.0
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Relevant courses: Regression, Machine Learning, Databases
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Dean's List 2024
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Projects
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Final-year project: Campus Energy Dashboard
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;"
+            >
+              github.com/mayajohnson/energy-dashboard
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px;"
+          >
+            Technologies: Python, SQL, Tableau
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Analyzed 18 months of campus meter data to find peak-use patterns
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a dashboard now used by 40 students and staff
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Experience
+        </h2>
+        <div
+          style="break-inside: avoid; margin-bottom: 8px;"
+        >
+          <div
+            style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline;"
+          >
+            <div>
+              <strong>
+                Data Analyst Intern
+              </strong>
+            </div>
+            <div
+              style="color: rgb(85, 91, 115); white-space: nowrap; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;"
+            >
+              Jun 2025 - Aug 2025
+            </div>
+          </div>
+          <div
+            style="color: rgb(85, 91, 115);"
+          >
+            Northwind Analytics, Remote
+          </div>
+          <ul
+            style="margin: 4px 0px 0px; padding-left: 18px;"
+          >
+            <li
+              style="margin: 1px 0px;"
+            >
+              Cleaned and merged 18 months of sales data using Python and SQL
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Built a weekly Tableau report that cut manual reporting from 3 hours to 20 minutes
+            </li>
+            <li
+              style="margin: 1px 0px;"
+            >
+              Presented findings to a team of 8 and helped prioritize 2 product fixes
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Skills
+        </h2>
+        <ul
+          style="margin: 0px; padding: 0px; list-style: none; display: flex; flex-wrap: wrap; gap: 6px;"
+        >
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            Python
+          </li>
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            SQL
+          </li>
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            Tableau
+          </li>
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            Excel
+          </li>
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            Statistics
+          </li>
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            Data cleaning
+          </li>
+          <li
+            style="border: 1px solid rgb(109, 40, 217); color: rgb(109, 40, 217); border-radius: 4px; padding: 1px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; font-weight: 500;"
+          >
+            Communication
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Certifications
+        </h2>
+        <ul
+          style="margin: 0px; padding-left: 18px;"
+        >
+          <li>
+            Google Data Analytics Certificate, Coursera (2025)
+          </li>
+        </ul>
+      </section>
+      <section
+        style="margin-top: 14px;"
+      >
+        <h2
+          style="margin: 0px 0px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; font-weight: 700; line-height: 1.2; color: rgb(18, 22, 43); border-left: 4px solid rgb(109, 40, 217); padding-left: 10px;"
+        >
+          Languages
+        </h2>
+        <p
+          style="margin: 0px;"
+        >
+          English (Native), French (Professional)
+        </p>
+      </section>
+    </div>
+  </div>
+</DocumentFragment>
+`;

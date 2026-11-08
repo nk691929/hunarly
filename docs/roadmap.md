@@ -4,7 +4,7 @@
 - [x] M1 Design system
 - [x] M2 Landing, pricing, legal pages, SEO foundation
 - [x] M3 Builder core (schema, store, forms, autosave, undo/redo, drag-and-drop, live preview)
-- [ ] M4 Templates
+- [x] M4 Templates (six templates, color, font and spacing controls)
 - [ ] M5 Auth and database
 - [ ] M6 PDF export
 - [ ] M7 Billing and gating
