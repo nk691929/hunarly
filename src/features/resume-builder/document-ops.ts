@@ -1,5 +1,10 @@
 import { splitList } from "@/features/resume-builder/format";
-import type { ListKey, ResumeDocument, SectionId } from "@/features/resume-builder/schema";
+import {
+  SECTION_IDS,
+  type ListKey,
+  type ResumeDocument,
+  type SectionId,
+} from "@/features/resume-builder/schema";
 
 type WithId = { id: string };
 
@@ -75,4 +80,13 @@ export function isSectionEmpty(doc: ResumeDocument, section: SectionId): boolean
     case "languages":
       return doc.languages.every((l) => !l.name.trim());
   }
+}
+
+/** True when the person has entered anything worth keeping (used to decide whether to offer a draft import). */
+export function hasContent(doc: ResumeDocument): boolean {
+  const p = doc.profile;
+  const profileFilled =
+    [p.fullName, p.headline, p.email, p.phone, p.location].some((v) => v.trim() !== "") ||
+    p.links.length > 0;
+  return profileFilled || SECTION_IDS.some((id) => !isSectionEmpty(doc, id));
 }

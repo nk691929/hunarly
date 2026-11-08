@@ -1,20 +1,30 @@
 "use client";
 
 import { Redo2, Undo2 } from "lucide-react";
+import Link from "next/link";
 import { useEffect } from "react";
 import { Logo } from "@/components/brand/logo";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import type { Persistence } from "@/features/resume-builder/persistence";
 import type { ResumeMode } from "@/features/resume-builder/schema";
 import { useResumeStore, type SaveStatus } from "@/features/resume-builder/store";
 
-const STATUS_TEXT: Record<SaveStatus, string> = {
-  idle: "",
-  dirty: "Saving...",
-  saved: "Saved on this device",
-  error: "Could not save. Your browser may be blocking storage.",
-};
+function statusText(status: SaveStatus, kind: Persistence["kind"]): string {
+  switch (status) {
+    case "idle":
+      return "";
+    case "dirty":
+      return "Saving...";
+    case "saved":
+      return kind === "cloud" ? "Saved to your account" : "Saved on this device";
+    case "error":
+      return kind === "cloud"
+        ? "Could not save. Check your connection; your changes are kept on this page."
+        : "Could not save. Your browser may be blocking storage.";
+  }
+}
 
 const MODES: { id: ResumeMode; label: string }[] = [
   { id: "standard", label: "Standard" },
@@ -27,7 +37,7 @@ function isEditable(target: EventTarget | null): boolean {
   return ["INPUT", "TEXTAREA", "SELECT"].includes(el.tagName) || el.isContentEditable;
 }
 
-export function BuilderToolbar() {
+export function BuilderToolbar({ persistence }: { persistence: Persistence }) {
   const title = useResumeStore((s) => s.history.present.title);
   const mode = useResumeStore((s) => s.history.present.mode);
   const canUndo = useResumeStore((s) => s.history.past.length > 0);
@@ -126,8 +136,18 @@ export function BuilderToolbar() {
       </div>
 
       <p role="status" aria-live="polite" className="ml-auto text-sm text-muted-foreground">
-        {STATUS_TEXT[saveStatus]}
+        {statusText(saveStatus, persistence.kind)}
       </p>
+      {persistence.kind === "cloud" && (
+        <Button asChild variant="outline" size="sm">
+          <Link href="/dashboard">My resumes</Link>
+        </Button>
+      )}
+      {persistence.kind === "local" && persistence.authAvailable && (
+        <Button asChild size="sm">
+          <Link href="/signin?callbackUrl=%2Fdashboard">Sign in to save online</Link>
+        </Button>
+      )}
       <ThemeToggle />
     </div>
   );

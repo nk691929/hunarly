@@ -18,7 +18,16 @@ export default defineConfig({
         "src/config/**/*.ts",
         "src/features/**/*.ts",
       ],
-      exclude: ["src/config/env.ts"],
+      exclude: [
+        "src/config/env.ts",
+        // Thin glue to external systems (Auth.js, Prisma, server actions). Covered by E2E in M11.
+        "src/server/auth.ts",
+        "src/server/auth-status.ts",
+        "src/server/db.ts",
+        "src/server/resumes/index.ts",
+        "src/server/resumes/prisma-repository.ts",
+        "src/features/**/actions.ts",
+      ],
       thresholds: { lines: 80, functions: 80, statements: 80, branches: 70 },
     },
   },
