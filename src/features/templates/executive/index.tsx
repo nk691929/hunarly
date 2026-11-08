@@ -10,7 +10,7 @@ const theme: TemplateTheme = {
   mono: false,
   nameSize: 30,
   nameWeight: 700,
-  nameTracking: 1,
+  nameTracking: 0,
   bodySize: 13,
   padX: 56,
   padY: 52,

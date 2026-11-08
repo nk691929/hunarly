@@ -1,12 +1,9 @@
 "use client";
 
-import { useElementSize } from "@/hooks/use-element-size";
+import { A4_HEIGHT, A4_WIDTH, PAGE_MARGIN, pageBreaks } from "@/features/resume-builder/pagination";
 import { useResumeStore } from "@/features/resume-builder/store";
 import { getTemplate } from "@/features/templates/registry";
-
-/** A4 at 96 dpi. Templates are laid out at this fixed size, then scaled to fit the column. */
-export const A4_WIDTH = 794;
-export const A4_HEIGHT = 1123;
+import { useElementSize } from "@/hooks/use-element-size";
 
 export function ResumePreview() {
   const doc = useResumeStore((s) => s.history.present);
@@ -15,32 +12,34 @@ export function ResumePreview() {
   const [contentRef, { height }] = useElementSize<HTMLDivElement>();
 
   const scale = width > 0 ? Math.min(1, width / A4_WIDTH) : 1;
-  const pages = Math.max(1, Math.ceil(height / A4_HEIGHT));
+  const breaks = pageBreaks(height);
+  const pages = breaks.length + 1;
+  const paperHeight = Math.max(A4_HEIGHT, height + PAGE_MARGIN);
 
   return (
     <section aria-label="Resume preview" className="mx-auto w-full" style={{ maxWidth: A4_WIDTH }}>
-      <div ref={wrapRef} style={{ height: pages * A4_HEIGHT * scale }}>
+      <div ref={wrapRef} style={{ height: paperHeight * scale }}>
         <div
           className="relative bg-white shadow-xl"
           style={{
             width: A4_WIDTH,
             transform: `scale(${scale})`,
             transformOrigin: "top left",
-            minHeight: pages * A4_HEIGHT,
+            minHeight: paperHeight,
           }}
         >
           <div ref={contentRef}>
             <Component document={doc} />
           </div>
-          {Array.from({ length: pages - 1 }, (_, i) => (
+          {breaks.map((y, i) => (
             <div
-              key={i}
+              key={y}
               aria-hidden="true"
               className="pointer-events-none absolute inset-x-0 border-t border-dashed border-neutral-400"
-              style={{ top: (i + 1) * A4_HEIGHT }}
+              style={{ top: y }}
             >
               <span className="absolute right-3 -translate-y-full text-[11px] text-neutral-500">
-                Page {i + 2} starts here
+                Page {i + 2} starts about here
               </span>
             </div>
           ))}

@@ -1,6 +1,6 @@
 /** Shared sizes and colors. Templates use px because the page is laid out at a fixed A4 width. */
 export const FONTS = {
-  sans: "var(--font-body), Arial, Helvetica, sans-serif",
+  sans: 'Arial, Helvetica, "Liberation Sans", sans-serif',
   serif: 'Georgia, "Times New Roman", serif',
 } as const;
 
