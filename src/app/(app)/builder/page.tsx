@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { BuilderLoader } from "@/features/resume-builder/components/builder-loader";
 import { auth } from "@/server/auth";
+import { getEntitlementsForUser } from "@/server/billing";
 import { authStatus } from "@/server/auth-status";
 
 export const metadata: Metadata = {
@@ -13,5 +14,8 @@ export const metadata: Metadata = {
 export default async function BuilderPage() {
   const session = await auth();
   if (session?.user?.id) redirect("/dashboard");
-  return <BuilderLoader persistence={{ kind: "local", authAvailable: authStatus.configured }} />;
+  const { plan } = await getEntitlementsForUser(null);
+  return (
+    <BuilderLoader persistence={{ kind: "local", authAvailable: authStatus.configured, plan }} />
+  );
 }

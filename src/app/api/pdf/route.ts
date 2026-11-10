@@ -1,10 +1,11 @@
 import { env } from "@/config/env";
 import { siteConfig } from "@/config/site";
 import { pdfFileName } from "@/features/resume-builder/pdf";
+import { canUseTemplate } from "@/features/templates/tiers";
 import { clientKey, isSameOrigin } from "@/lib/http";
 import { auth } from "@/server/auth";
+import { getEntitlementsForUser } from "@/server/billing";
 import { createSemaphore } from "@/server/concurrency";
-import { resolveEntitlements } from "@/server/entitlements";
 import { PdfRenderError } from "@/server/providers/pdf";
 import { getPdfRenderer } from "@/server/providers/pdf/instance";
 import { createMemoryRateLimiter } from "@/server/rate-limit";
@@ -17,13 +18,18 @@ const MAX_BODY_BYTES = 250_000;
 const limiter = createMemoryRateLimiter({ limit: 8, windowMs: 60_000 });
 const renders = createSemaphore(2);
 
-function fail(status: number, error: string, extraHeaders?: Record<string, string>) {
-  return Response.json({ error }, { status, headers: extraHeaders });
+function fail(
+  status: number,
+  error: string,
+  extra?: { headers?: Record<string, string>; code?: string },
+) {
+  return Response.json({ error, code: extra?.code }, { status, headers: extra?.headers });
 }
 
 /**
  * POST a resume document, get a PDF back. Works for guests and signed-in users.
- * Never logs resume content: only error types are logged.
+ * The plan decides the footer and which templates may be exported. Never logs resume content:
+ * only error types are logged.
  */
 export async function POST(request: Request) {
   if (!isSameOrigin(request.headers.get("origin"), siteConfig.url)) {
@@ -55,7 +61,18 @@ export async function POST(request: Request) {
       429,
       `Too many downloads. Please try again in ${limit.retryAfterSeconds} seconds.`,
       {
-        "Retry-After": String(limit.retryAfterSeconds),
+        headers: { "Retry-After": String(limit.retryAfterSeconds) },
+      },
+    );
+  }
+
+  const entitlements = await getEntitlementsForUser(userId);
+  if (!canUseTemplate(parsed.document.templateId, entitlements.proTemplates)) {
+    return fail(
+      402,
+      "This template is part of Pro. Switch to a free template, or upgrade to Pro to export it.",
+      {
+        code: "template_locked",
       },
     );
   }
@@ -64,11 +81,6 @@ export async function POST(request: Request) {
   if (!release) return fail(503, "We are busy creating other PDFs. Please try again in a moment.");
 
   try {
-    const entitlements = resolveEntitlements({
-      userId,
-      devProUnlock: env.DEV_PRO_UNLOCK === "1",
-      isDevelopment: env.NODE_ENV === "development",
-    });
     const pdf = await getPdfRenderer().render({
       document: parsed.document,
       watermark: entitlements.pdfWatermark,

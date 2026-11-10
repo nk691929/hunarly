@@ -1,8 +1,11 @@
 "use client";
 
+import { Lock } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { TemplateThumbnail } from "@/features/resume-builder/components/template-thumbnail";
 import type { ResumeStyle } from "@/features/resume-builder/schema";
+import { usePlan } from "@/features/resume-builder/plan-context";
 import { useResumeStore } from "@/features/resume-builder/store";
 import { isAccentReadable } from "@/features/templates/_shared/color";
 import { getTemplate, templates } from "@/features/templates/registry";
@@ -78,6 +81,8 @@ export function DesignEditor() {
   const applyTemplate = useResumeStore((s) => s.applyTemplate);
   const setStyle = useResumeStore((s) => s.setStyle);
   const current = getTemplate(templateId);
+  const plan = usePlan();
+  const locked = (tier: string) => tier === "pro" && plan === "free";
 
   return (
     <div className="flex flex-col gap-6">
@@ -85,12 +90,16 @@ export function DesignEditor() {
         <legend className="mb-3 text-sm font-medium">Template</legend>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {templates.map((t) => (
-            <label key={t.id} className="cursor-pointer">
+            <label
+              key={t.id}
+              className={locked(t.tier) ? "cursor-not-allowed opacity-60" : "cursor-pointer"}
+            >
               <input
                 type="radio"
                 name="template"
-                aria-label={t.name}
+                aria-label={locked(t.tier) ? `${t.name} (Pro)` : t.name}
                 checked={current.id === t.id}
+                disabled={locked(t.tier)}
                 onChange={() => applyTemplate(t.id, t.defaultStyle)}
                 className="peer sr-only"
               />
@@ -100,12 +109,31 @@ export function DesignEditor() {
                 <TemplateThumbnail template={t} />
                 <span className="flex items-center justify-between gap-2 px-1 text-sm font-medium">
                   {t.name}
-                  {t.tier === "pro" && <Badge variant="primary">Pro</Badge>}
+                  {t.tier === "pro" && (
+                    <Badge variant="primary" className="gap-1">
+                      {locked(t.tier) && <Lock className="size-3" aria-hidden="true" />}
+                      Pro
+                    </Badge>
+                  )}
                 </span>
               </span>
             </label>
           ))}
         </div>
+        {plan === "free" && (
+          <p className="text-sm">
+            Pro templates need an upgrade.{" "}
+            <Link href="/pricing" className="font-medium underline">
+              See plans
+            </Link>
+          </p>
+        )}
+        {plan === "free" && current.tier === "pro" && (
+          <p className="text-sm text-destructive">
+            This resume uses a Pro template. You can keep editing it, but to download a PDF switch
+            to a free template or upgrade.
+          </p>
+        )}
         <p className="text-sm text-muted-foreground">
           {current.description} Choosing a template resets color, font and spacing to its look. Undo
           brings your previous choices back.
