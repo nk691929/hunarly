@@ -19,6 +19,8 @@ model User {
   accounts      Account[]
   sessions      Session[]
   resumes       Resume[]
+  subscriptions Subscription[]
+  purchases     Purchase[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -76,4 +78,60 @@ model Resume {
   updatedAt     DateTime @updatedAt
 
   @@index([userId, updatedAt])
+}
+
+// ---- Billing (M7) ----
+
+model Subscription {
+  id                     String    @id @default(cuid())
+  userId                 String
+  user                   User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider               String
+  providerSubscriptionId String
+  /// pro_monthly or pro_yearly
+  sku                    String
+  /// The provider's status: active, on_trial, past_due, paused, unpaid, cancelled, expired
+  status                 String
+  /// When the paid period ends or renews.
+  currentPeriodEnd       DateTime?
+  cancelAtPeriodEnd      Boolean   @default(false)
+  /// Link to the provider's customer portal (update card, cancel).
+  manageUrl              String?
+  /// When the provider last changed this subscription. Older updates never overwrite newer ones.
+  providerUpdatedAt      DateTime
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+
+  @@unique([provider, providerSubscriptionId])
+  @@index([userId])
+}
+
+/// One-time purchases (the job-hunt pass).
+model Purchase {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider        String
+  providerOrderId String
+  sku             String
+  /// Smallest currency unit (cents).
+  amount          Int
+  currency        String
+  purchasedAt     DateTime
+  expiresAt       DateTime
+  refundedAt      DateTime?
+  createdAt       DateTime  @default(now())
+
+  @@unique([provider, providerOrderId])
+  @@index([userId])
+}
+
+/// Every webhook event we have processed, so repeats are ignored.
+model PaymentEvent {
+  id          String   @id @default(cuid())
+  provider    String
+  eventId     String
+  processedAt DateTime @default(now())
+
+  @@unique([provider, eventId])
 }
