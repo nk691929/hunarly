@@ -8,6 +8,7 @@ import { EditorPanel } from "@/features/resume-builder/components/editor-panel";
 import { ResumePreview } from "@/features/resume-builder/components/resume-preview";
 import { loadDraft, saveDraft } from "@/features/resume-builder/draft-storage";
 import type { Persistence } from "@/features/resume-builder/persistence";
+import { PlanProvider } from "@/features/resume-builder/plan-context";
 import { useResumeStore } from "@/features/resume-builder/store";
 import { useAutosave, type AutosaveTarget } from "@/hooks/use-autosave";
 import { cn } from "@/lib/utils";
@@ -42,47 +43,56 @@ export function Builder({ persistence }: { persistence: Persistence }) {
   if (!hydrated) return <BuilderSkeleton />;
 
   return (
-    <div className="flex h-dvh flex-col">
-      <BuilderToolbar persistence={persistence} />
+    <PlanProvider value={persistence.plan}>
+      <div className="flex h-dvh flex-col">
+        <BuilderToolbar persistence={persistence} />
 
-      <div role="tablist" aria-label="Builder view" className="grid grid-cols-2 border-b lg:hidden">
-        {(["edit", "preview"] as const).map((t) => (
-          <button
-            key={t}
-            type="button"
-            role="tab"
-            id={`tab-${t}`}
-            aria-selected={tab === t}
-            aria-controls={`pane-${t}`}
-            onClick={() => setTab(t)}
+        <div
+          role="tablist"
+          aria-label="Builder view"
+          className="grid grid-cols-2 border-b lg:hidden"
+        >
+          {(["edit", "preview"] as const).map((t) => (
+            <button
+              key={t}
+              type="button"
+              role="tab"
+              id={`tab-${t}`}
+              aria-selected={tab === t}
+              aria-controls={`pane-${t}`}
+              onClick={() => setTab(t)}
+              className={cn(
+                "py-3 text-sm font-medium",
+                tab === t ? "border-b-2 border-primary text-foreground" : "text-muted-foreground",
+              )}
+            >
+              {t === "edit" ? "Edit" : "Preview"}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid min-h-0 flex-1 lg:grid-cols-2">
+          <div
+            id="pane-edit"
+            role="tabpanel"
+            aria-labelledby="tab-edit"
+            className={cn("overflow-y-auto p-4 lg:p-6", tab === "preview" && "hidden lg:block")}
+          >
+            <EditorPanel />
+          </div>
+          <div
+            id="pane-preview"
+            role="tabpanel"
+            aria-labelledby="tab-preview"
             className={cn(
-              "py-3 text-sm font-medium",
-              tab === t ? "border-b-2 border-primary text-foreground" : "text-muted-foreground",
+              "overflow-y-auto bg-muted p-4 lg:p-6",
+              tab === "edit" && "hidden lg:block",
             )}
           >
-            {t === "edit" ? "Edit" : "Preview"}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid min-h-0 flex-1 lg:grid-cols-2">
-        <div
-          id="pane-edit"
-          role="tabpanel"
-          aria-labelledby="tab-edit"
-          className={cn("overflow-y-auto p-4 lg:p-6", tab === "preview" && "hidden lg:block")}
-        >
-          <EditorPanel />
-        </div>
-        <div
-          id="pane-preview"
-          role="tabpanel"
-          aria-labelledby="tab-preview"
-          className={cn("overflow-y-auto bg-muted p-4 lg:p-6", tab === "edit" && "hidden lg:block")}
-        >
-          <ResumePreview />
+            <ResumePreview />
+          </div>
         </div>
       </div>
-    </div>
+    </PlanProvider>
   );
 }

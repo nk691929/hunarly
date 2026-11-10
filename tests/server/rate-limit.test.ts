@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
 import { createSemaphore } from "@/server/concurrency";
-import { resolveEntitlements } from "@/server/entitlements";
 import { createMemoryRateLimiter } from "@/server/rate-limit";
 
 describe("memory rate limiter", () => {
@@ -43,25 +42,5 @@ describe("semaphore", () => {
     release();
     release();
     expect(sem.active).toBe(0);
-  });
-});
-
-describe("entitlements", () => {
-  it("watermarks free exports", () => {
-    expect(
-      resolveEntitlements({ userId: null, devProUnlock: false, isDevelopment: false }),
-    ).toEqual({
-      plan: "free",
-      pdfWatermark: true,
-    });
-  });
-
-  it("lets development builds unlock Pro, but never production", () => {
-    expect(
-      resolveEntitlements({ userId: "u", devProUnlock: true, isDevelopment: true }).pdfWatermark,
-    ).toBe(false);
-    expect(
-      resolveEntitlements({ userId: "u", devProUnlock: true, isDevelopment: false }).pdfWatermark,
-    ).toBe(true);
   });
 });

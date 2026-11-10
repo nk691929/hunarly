@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { BuilderLoader } from "@/features/resume-builder/components/builder-loader";
 import { auth } from "@/server/auth";
+import { getEntitlementsForUser } from "@/server/billing";
 import { resumeService } from "@/server/resumes";
 
 export const metadata: Metadata = {
@@ -15,12 +16,20 @@ export default async function SavedResumePage({ params }: { params: Promise<{ id
   const session = await auth();
   if (!session?.user?.id) redirect(`/signin?callbackUrl=${encodeURIComponent(`/builder/${id}`)}`);
 
-  const result = await resumeService.get(session.user.id, id);
+  const [result, entitlements] = await Promise.all([
+    resumeService.get(session.user.id, id),
+    getEntitlementsForUser(session.user.id),
+  ]);
   if (!result.ok) notFound();
 
   return (
     <BuilderLoader
-      persistence={{ kind: "cloud", resumeId: id, initialDocument: result.document }}
+      persistence={{
+        kind: "cloud",
+        resumeId: id,
+        initialDocument: result.document,
+        plan: entitlements.plan,
+      }}
     />
   );
 }

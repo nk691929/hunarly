@@ -19,6 +19,9 @@ export function createMemoryResumeRepository(): ResumeRepository & {
         .sort((a, b) => b.updatedAt.getTime() - a.updatedAt.getTime())
         .map(({ id, title, templateId, updatedAt }) => ({ id, title, templateId, updatedAt }));
     },
+    async count(userId) {
+      return [...rows.values()].filter((r) => r.userId === userId).length;
+    },
     async get(userId, id) {
       return own(userId, id) ?? null;
     },

@@ -7,7 +7,7 @@
 - [x] M4 Templates (six templates, color, font and spacing controls)
 - [x] M5 Auth and database (Google and email sign-in, saved resumes, dashboard, draft import)
 - [x] M6 PDF export (server-rendered, selectable text, free-plan footer, ATS text check)
-- [ ] M7 Billing and gating
+- [x] M7 Billing and gating (Lemon Squeezy checkout, entitlements, limits enforced on the server). Manual bank transfer is a follow-up (M7b).
 - [ ] M8 Premium features
 - [ ] M9 SEO content and blog
 - [ ] M10 Security and privacy

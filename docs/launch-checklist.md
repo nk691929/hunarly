@@ -40,3 +40,16 @@ Items discovered while building. Tick each before going live.
 - [ ] Confirm `DEV_PRO_UNLOCK` is not set in production (it is ignored there, but keep it clean).
 - [ ] Move the PDF rate limit to a shared store (M10) before public launch.
 - [ ] Neon free tier sleeps idle databases, which slows the first request. Put the app and database in the same region.
+
+## Payments (added in M7)
+
+- [ ] Re-check Lemon Squeezy's status and its Stripe transition plans; decide whether to launch on it or switch provider.
+- [ ] Confirm Pakistan on their current bank payout list, the payout minimum, fees, and the tax forms they require.
+- [ ] Create the three products, copy the variant ids, and set all `LEMONSQUEEZY_*` values in production.
+- [ ] Add the production webhook URL and signing secret; send a test event and a real test-mode purchase.
+- [ ] Make PKR, EUR and GBP display prices match what checkout charges (or label them approximate).
+- [ ] Create the student discount code, set `STUDENT_DISCOUNT_CODE`, and decide how strictly to verify students.
+- [ ] Test the full cycle in test mode: buy, cancel, expire, refund, and the job-hunt pass ending after 60 days.
+- [ ] Add a refund policy and link it from the pricing and terms pages; update the Terms to match.
+- [ ] Switch Lemon Squeezy from test mode to live mode and repeat one real purchase.
+- [ ] Move the checkout and PDF rate limits to a shared store (M10).

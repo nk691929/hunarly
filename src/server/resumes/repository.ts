@@ -23,6 +23,7 @@ export interface ResumeData {
  */
 export interface ResumeRepository {
   list(userId: string): Promise<ResumeSummary[]>;
+  count(userId: string): Promise<number>;
   get(userId: string, id: string): Promise<ResumeRecord | null>;
   create(userId: string, data: ResumeData): Promise<{ id: string }>;
   update(userId: string, id: string, data: ResumeData): Promise<boolean>;

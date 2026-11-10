@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { AppHeader } from "@/components/app-header";
+import { Badge } from "@/components/ui/badge";
 import { DeleteResumeButton } from "@/features/dashboard/components/delete-resume-button";
 import { ImportDraftCard } from "@/features/dashboard/components/import-draft-card";
 import { NewResumeButton } from "@/features/dashboard/components/new-resume-button";
 import { getTemplate } from "@/features/templates/registry";
 import { auth } from "@/server/auth";
+import { getEntitlementsForUser } from "@/server/billing";
 import { resumeService } from "@/server/resumes";
 
 export const metadata: Metadata = { title: "My resumes", robots: { index: false, follow: false } };
@@ -17,14 +19,22 @@ export default async function DashboardPage() {
   const session = await auth();
   if (!session?.user?.id) redirect("/signin?callbackUrl=%2Fdashboard");
 
-  const resumes = await resumeService.list(session.user.id);
+  const [resumes, entitlements] = await Promise.all([
+    resumeService.list(session.user.id),
+    getEntitlementsForUser(session.user.id),
+  ]);
 
   return (
     <>
       <AppHeader email={session.user.email} />
       <div className="mx-auto flex max-w-4xl flex-col gap-8 px-5 py-12">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <h1 className="font-display text-3xl font-bold tracking-tight">My resumes</h1>
+          <div className="flex items-center gap-3">
+            <h1 className="font-display text-3xl font-bold tracking-tight">My resumes</h1>
+            <Badge variant={entitlements.plan === "pro" ? "primary" : "default"}>
+              {entitlements.plan === "pro" ? "Pro" : "Free"}
+            </Badge>
+          </div>
           <NewResumeButton />
         </div>
 

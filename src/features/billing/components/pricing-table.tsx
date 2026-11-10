@@ -11,6 +11,7 @@ import {
   FREE_FEATURES,
   PASS_DAYS,
   PRO_FEATURES,
+  SKU_BY_OPTION,
   STUDENT_DISCOUNT_PERCENT,
   type BillingOption,
   type Currency,
@@ -130,7 +131,7 @@ export function PricingTable() {
           </div>
           <FeatureList items={PRO_FEATURES} />
           <Button asChild size="lg" className="mt-auto">
-            <Link href={`/builder?plan=pro-${option}`}>Get Pro</Link>
+            <Link href={`/billing?sku=${SKU_BY_OPTION[option]}`}>Get Pro</Link>
           </Button>
         </section>
       </div>
