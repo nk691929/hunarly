@@ -22,6 +22,15 @@ export const env = createEnv({
     PDF_BASE_URL: z.string().url().optional(),
     /** Development only: 1 removes the PDF watermark so you can check the clean output. */
     DEV_PRO_UNLOCK: z.string().optional(),
+    /** Payments (Lemon Squeezy). All six are needed together; see docs/billing.md. */
+    LEMONSQUEEZY_API_KEY: z.string().optional(),
+    LEMONSQUEEZY_STORE_ID: z.string().optional(),
+    LEMONSQUEEZY_WEBHOOK_SECRET: z.string().optional(),
+    LEMONSQUEEZY_VARIANT_MONTHLY: z.string().optional(),
+    LEMONSQUEEZY_VARIANT_YEARLY: z.string().optional(),
+    LEMONSQUEEZY_VARIANT_PASS: z.string().optional(),
+    /** Discount code (created in the provider dashboard) applied automatically for academic emails. */
+    STUDENT_DISCOUNT_CODE: z.string().optional(),
   },
   client: {
     NEXT_PUBLIC_SITE_URL: z.string().url().default("http://localhost:3000"),
@@ -36,6 +45,13 @@ export const env = createEnv({
     EMAIL_FROM: process.env.EMAIL_FROM,
     PDF_BASE_URL: process.env.PDF_BASE_URL,
     DEV_PRO_UNLOCK: process.env.DEV_PRO_UNLOCK,
+    LEMONSQUEEZY_API_KEY: process.env.LEMONSQUEEZY_API_KEY,
+    LEMONSQUEEZY_STORE_ID: process.env.LEMONSQUEEZY_STORE_ID,
+    LEMONSQUEEZY_WEBHOOK_SECRET: process.env.LEMONSQUEEZY_WEBHOOK_SECRET,
+    LEMONSQUEEZY_VARIANT_MONTHLY: process.env.LEMONSQUEEZY_VARIANT_MONTHLY,
+    LEMONSQUEEZY_VARIANT_YEARLY: process.env.LEMONSQUEEZY_VARIANT_YEARLY,
+    LEMONSQUEEZY_VARIANT_PASS: process.env.LEMONSQUEEZY_VARIANT_PASS,
+    STUDENT_DISCOUNT_CODE: process.env.STUDENT_DISCOUNT_CODE,
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   },
   skipValidation: process.env.SKIP_ENV_VALIDATION === "1",

@@ -49,3 +49,34 @@ export const PRO_FEATURES = [
   "Shareable resume link with view analytics",
   "Priority support",
 ] as const;
+
+export type Plan = "free" | "pro";
+
+/** What can be bought. Each maps to a product variant in the payment provider's dashboard. */
+export const SKUS = ["pro_monthly", "pro_yearly", "job_hunt_pass"] as const;
+export type Sku = (typeof SKUS)[number];
+
+export const SKU_BY_OPTION: Record<BillingOption, Sku> = {
+  monthly: "pro_monthly",
+  yearly: "pro_yearly",
+  pass: "job_hunt_pass",
+};
+
+export const OPTION_BY_SKU: Record<Sku, BillingOption> = {
+  pro_monthly: "monthly",
+  pro_yearly: "yearly",
+  job_hunt_pass: "pass",
+};
+
+export const SKU_LABELS: Record<Sku, string> = {
+  pro_monthly: "Pro, monthly",
+  pro_yearly: "Pro, yearly",
+  job_hunt_pass: `Job-hunt pass (${PASS_DAYS} days)`,
+};
+
+export function isSku(value: unknown): value is Sku {
+  return typeof value === "string" && (SKUS as readonly string[]).includes(value);
+}
+
+/** Free plan limits. Enforced on the server (see src/server/billing and src/server/resumes). */
+export const FREE_MAX_RESUMES = 1;

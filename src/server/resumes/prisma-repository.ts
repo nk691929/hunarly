@@ -11,6 +11,8 @@ export const prismaResumeRepository: ResumeRepository = {
       select: { id: true, title: true, templateId: true, updatedAt: true },
     }),
 
+  count: (userId) => getDb().resume.count({ where: { userId } }),
+
   get: (userId, id) => getDb().resume.findFirst({ where: { id, userId } }),
 
   create: async (userId, data) => {
