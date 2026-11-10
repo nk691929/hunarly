@@ -1,0 +1,137 @@
+// Database schema. After changing it: pnpm db:migrate --name <what-changed>
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---- Auth.js models (required by the Prisma adapter) ----
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  resumes       Resume[]
+  subscriptions Subscription[]
+  purchases     Purchase[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ---- Product models ----
+
+model Resume {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// Copied from the document so the dashboard can list resumes without parsing JSON.
+  title         String
+  templateId    String
+  /// The full resume document (validated with resumeDocumentSchema before every write).
+  content       Json
+  schemaVersion Int      @default(1)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([userId, updatedAt])
+}
+
+// ---- Billing (M7) ----
+
+model Subscription {
+  id                     String    @id @default(cuid())
+  userId                 String
+  user                   User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider               String
+  providerSubscriptionId String
+  /// pro_monthly or pro_yearly
+  sku                    String
+  /// The provider's status: active, on_trial, past_due, paused, unpaid, cancelled, expired
+  status                 String
+  /// When the paid period ends or renews.
+  currentPeriodEnd       DateTime?
+  cancelAtPeriodEnd      Boolean   @default(false)
+  /// Link to the provider's customer portal (update card, cancel).
+  manageUrl              String?
+  /// When the provider last changed this subscription. Older updates never overwrite newer ones.
+  providerUpdatedAt      DateTime
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+
+  @@unique([provider, providerSubscriptionId])
+  @@index([userId])
+}
+
+/// One-time purchases (the job-hunt pass).
+model Purchase {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider        String
+  providerOrderId String
+  sku             String
+  /// Smallest currency unit (cents).
+  amount          Int
+  currency        String
+  purchasedAt     DateTime
+  expiresAt       DateTime
+  refundedAt      DateTime?
+  createdAt       DateTime  @default(now())
+
+  @@unique([provider, providerOrderId])
+  @@index([userId])
+}
+
+/// Every webhook event we have processed, so repeats are ignored.
+model PaymentEvent {
+  id          String   @id @default(cuid())
+  provider    String
+  eventId     String
+  processedAt DateTime @default(now())
+
+  @@unique([provider, eventId])
+}
